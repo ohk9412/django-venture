@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>My Site</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles2.css' %}" rel="stylesheet" />
+
+
+    <meta charset="UTF-8">
+    <title>문단 정렬3</title>
+    <style>
+        #cen {
+            text-align: center;
+        }
+
+        #rt {
+            text-align: right;
+        }
+
+        #jus {
+            text-align: justify;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body id="page-top">
+
+
+
+
+
+
+
+
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="{% url 'index' %}">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-5"
+                    src="{% static 'assets/img/venture2.jpg' %}" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">기술현황</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">인력현황</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">신규채용</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#degree">신규채용 희망학력</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#regions">지역별 현황</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#field">업종별 현황</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competency">경쟁력 비교 현황</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+
+                    <span class="text-danger">벤처기업</span>
+                    <span class="text-secondary">상세정보</span>
+                </h1>
+                <div class="subheading mb-5">
+                    중소기업에 희망을, 벤처기업에 날개를, 청년들에게 일자리와 꿈을!
+                </div>
+                <p class="lead mb-5">벤처기업은 창조적 아이디어와 첨단 기술을 바탕으로 도전적인 사업을 운영하는 중소기업을 말한다. 중소기업이라 하더라도, 창업한지 오래된 중견 기업은
+                    일반적으로 벤처기업이라 부르지 않는다.</p>
+                <div class="social-icons">
+                    <a class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon"><i class="fab fa-github"></i></a>
+                    <a class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+
+
+
+
+
+
+
+
+
+        <!-- 1번!!!!!      5절 기술 및 산업재산권 현황          -->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">벤처기업 기술 현황</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <!-- 1. 4차산업혁명 주력 제품 -->
+                        <h3 class="mb-0">주력제품(서비스) 기술</h3>
+
+                        <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/5_2사차산업.png' %}" alt="">
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                </div>
+                <div class="subheading mb-3">벤처기업의 주력 제품(서비스)과 가장 관련성이 큰 기술에 대해 ‘빅데이터’라고
+                    응답한 비율이 15.1%로 가장 높고, 다음으로 ‘사물인터넷(IoT)’ 13.9%, ‘인공지능’
+                    13.8%, ‘스마트 공장’ 12.9%, ‘클라우드’ 12.1% 순으로 나타났다.</div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-shrink-0"><span class="text-primary">(주력 제품(서비스)기술이 4차 산업혁명과 관련 있다고 응답한 기업,
+                            복수응답)</span></div>
+                </div>
+
+                <!-- 2. 기술수준 (세계 / 국내 ) -->
+                <h3 class="mb-0">주력제품(서비스) 기술</h3>
+                <br>
+                <p> 벤처기업의 현재 기술력 수준을 국내 최고수준과 비교할 경우, ‘국내 최고기술과
+                    동등한 수준(90~99%)’이 40.5%로 가장 많으며, 다음으로 ‘국내 최고기술에 근접한
+                    수준(80~89%)’이 30.0%, ‘국내 최고기술보다 다소 뒤쳐진 수준(70~79%)’ 15.1%,
+                    ‘국내 최고수준(100%)’ 11.9%, ‘국내 최고기술보다 낮은 수준(60~69%)’ 2.4% 순으로
+                    나타남</p>
+                <p id="cen"> <b>세계기술력</b> </p>
+                <img class="card-img rounded-0" src="{% static 'assets/chart/5_5기술수준세계.png' %}" alt="">
+                <p id="cen"> <b>국내기술력</b> </p>
+                <img class="card-img rounded-0" src="{% static 'assets/chart/5_5기술수준국내.png' %}" alt="">
+
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary"></span></div>
+    </div>
+
+
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-shrink-0"><span class="text-primary">(주력 제품(서비스)기술이 4차 산업혁명과 관련 있다고 응답한 기업, 복수응답)</span></div>
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h3 class="mb-0"></h3>
+            <div class="subheading mb-3"></div>
+        </div>
+
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="flex-grow-1">
+        </div>
+        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+    </div>
+    </div>
+    </section>
+    <hr class="m-0" />
+
+
+
+
+
+    <!-- 2절 인력현황 -->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">인력 및 조직현황</h2>
+
+
+
+
+            <div class="flex-grow-1">
+                <h3 class="mb-0">인력규모현황</h3>
+                <div>벤처기업의 2019년 12월말 기준 총 종사자 수는 810,643명으로 추정되며, 기업 당
+                    평균 종사자 수는 22.2명으로 전년대비 12.1% 증가함</div>
+
+                <div class="row">
+                    <!-- single-well start-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+
+                                <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_1인력현황1.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+
+                                <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_1인력현황2.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single-well start-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+                                <a href="#">
+                                    <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_1인력현황3.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-well end-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-middle">
+                            <div class="single-well">
+                                <a href="#">
+                                    <h4 class="sec-head">project Maintenance</h4>
+                                </a>
+                                <p>
+                                    Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                                    aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur
+                                    adipisicing elit. Itaque quas officiis iure
+                                </p>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-check"></i> Interior design Package
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Building House
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Reparing of Residentail Roof
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Renovaion of Commercial Office
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Make Quality Products
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col-->
+                    </div>
+                </div>
+
+
+
+                <div class="flex-grow-1">
+                    <br><br><br>
+                    <h3 class="mb-0">구인하기 어려운 직종</h3>
+                    <div>벤처기업의 인력확보 애로 직종을 1+2순위로 살펴본 결과, ‘연구/개발’이 72.1%로
+                        가장 높으며, ‘생산/품질’ 51.5%, ‘홍보/마케팅/영업’ 40.8%, ‘인사/총무’ 12.6%,
+                        ‘전략/기획’ 9.9%, ‘재무/회계’ 6.0%, ‘유통/물류’ 3.4% 순으로 나타났다.</div>
+
+                    <div class="row">
+
+                        <!-- single-well end-->
+                        
+                        <img id = "chart_big" src="{% static 'assets/chart/2_7애로직종1.png' %}" alt="">
+                        </a>
+                                
+                    </div>
+                </div>
+    </section>
+    <hr class="m-0" />
+
+
+
+    <!-- 3 번 2 신규채용의사 !!!!!! -->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">신규채용</h2>
+            <div class="flex-grow-1">
+                <h3 class="mb-0">신규채용 의사</h3>
+                <div>2020년 하반기와 2021년에 신규인력 채용계획이 있다고 응답한 기업 중 신규채용
+                    계획 인력은 평균 2.3명이다.</div>
+
+                <div class="row">
+
+                    <!-- single-well start-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+
+                                <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_4신규채용1.png' %}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-well end-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-middle">
+                            <div class="single-well">
+
+                                <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_4신규채용2.png' %}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col-->
+                </div>
+
+    </section>
+    <hr class="m-0" />
+
+
+    <!-- 3 번 1!!!!!! -->
+    <section class="resume-section" id="degree">
+        <div class="resume-section-content">
+            <h2 class="mb-5">신규채용과 학력</h2>
+            <div class="row">
+                <!-- single-well start-->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-left">
+                        <div class="single-well">
+                            <h3 class="mb-0">신규채용 희망 학력</h3>
+                            <div>신규채용 희망 학력은 ‘대졸’ 1.4명, ‘고졸이하’ 0.7명, ‘전문대졸’ 0.5명, ‘석사’
+                                0.1명 순이며, ‘박사학력’ 신규채용 의사는 전혀 없는 것으로 조사되었다.</div>
+                            <a href="#">
+                                <img class="card-img rounded-0" id = "chart_img" src="{% static 'assets/chart/2_5신규학력1.png' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-well end-->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-middle">
+                        <div class="single-well">
+                            <a href="#">
+                                <h4 class="sec-head">project Maintenance</h4>
+                            </a>
+                            <p>
+                                Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                                aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur
+                                adipisicing elit. Itaque quas officiis iure
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-check"></i> Interior design Package
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i> Building House
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i> Reparing of Residentail Roof
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i> Renovaion of Commercial Office
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i> Make Quality Products
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End col-->
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- 지역별 현황 !!!!!! -->
+    <section class="resume-section" id="regions">
+        <div class="resume-section-content">
+            <h2 class="mb-5">지역별 현황</h2>
+            <div class="flex-grow-1">
+                <h3 class="mb-0">지역별 현황</h3>
+                <div>벤처기업의 권역별 분포는 ‘서울/인천/경기’ 지역이 51.3%로 가장 많고, 다음으로
+                    ‘대전/세종/충청/강원’ 15.3%, ‘부산/경남/울산’ 14.9%, ‘대구/경북’ 9.8%, ‘광주/
+                    전라/제주’ 8.7% 순으로 분포하였다.</div><br>
+                <div class="row">
+    
+                    <!-- single-well start-->
+                    
+                    <img class="card-img rounded-0" src="{% static 'assets/chart/3_3권역별 분포현황.png' %}"  alt="">
+    
+                </div><br>
+                <div>세부적으로 17개 시도별 분포는 ‘경기’ 지역이 26.7%로 가장 많고, 다음으로 ‘서울’
+                    20.9%, ‘부산’ 6.9%, ‘경남’ 6.2%, ‘대전’ 5.9% 등의 순으로 분포하였다.</div>
+                <br>
+                <div class = "row"></div>
+                    <!-- single-well end-->
+                    <img class="card-img rounded-0" src="{% static 'assets/chart/3_3지역별 분포현황.png' %}"  alt="">
+    
+                </div>
+    
+    </section>
+    <hr class="m-0" />
+
+    <!-- 업종별 현황 !!!!!! -->
+    <section class="resume-section" id="field">
+        <div class="resume-section-content">
+            <h2 class="mb-5">업종별 현황</h2>
+            <div class="flex-grow-1">
+                <h3 class="mb-0">업종별 현황</h3>
+                <div>10대 업종을 기준으로 도소매업이나 연구 및 개발 서비스 직종이 제일 많다.</div>
+                <br>
+                <div class="row">
+    
+                    <!-- single-well start-->
+                    
+                    <img class="card-img" src="{% static 'assets/chart/3_2업종분포현황.png' %}" alt="">
+    
+                </div>
+    
+    </section>
+    <hr class="m-0" />
+
+    <!-- 경쟁력 비교 현황 !!!!!! -->
+    <section class="resume-section" id="competency">
+        <div class="resume-section-content">
+            <h2 class="mb-5">경쟁력 비교 현황</h2>
+            <div class="flex-grow-1">
+                <h3 class="mb-0">경쟁력 비교 현황</h3>
+                <div>경쟁사와의 역량별 경쟁력을 5점 척도로 비교한 결과, ‘개발역량(기술, 디자인,
+                    신제품 개발)’은 ‘높음’과 ‘보통’이 비슷하게 높은 값으로 나타났으며, ‘제조역량(생산 및 품질)’은 ‘높음’이 가장 많았다.
+                    ‘마케팅 역량(마케팅, 브랜드, 시장기회분석)’은 ‘보통’이 가장 높게 나타났다.</div>
+                <br>
+                <div class="row">
+    
+                    <!-- single-well start-->
+                            <img class="card-img rounded-0" src="{% static 'assets/chart/6_1역량비교현황.png' %}" alt="">
+    
+                </div>
+    
+    </section>
+    <hr class="m-0" />
+
+
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
+                skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free
+                climbing, and kayaking.</p>
+            <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
+                shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology
+                advancements in the front-end web development world.</p>
+        </div>
+    </section>
+    <hr class="m-0" />
+
+
+
+    <!-- Awards-->
+    <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Awards & Certifications</h2>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    Google Analytics Certified Developer
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    Mobile Web Specialist - Google Certification
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    1
+                    <sup>st</sup>
+                    Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    1
+                    <sup>st</sup>
+                    Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    2
+                    <sup>nd</sup>
+                    Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    1
+                    <sup>st</sup>
+                    Place - James Buchanan High School - Hackathon 2006
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    3
+                    <sup>rd</sup>
+                    Place - James Buchanan High School - Hackathon 2005
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts2.js"></script>
+</body>
+
+</html>
